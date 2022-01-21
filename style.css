@@ -1,0 +1,85 @@
+/* Font-Family */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto';
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(5, 36, 58, 0.75);
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 450px;
+    width: 280px;
+    border-radius: 7px;
+    background-color: rgba(5, 36, 58, 0.76);
+    border: 3px solid rgba(46, 10, 47, 0.75);
+}
+
+.screen{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 20px;
+    font-size: 25px;
+    color: #CF891F;
+    margin: 10px auto 0 auto;
+    width: 250px;
+    height: 115px;
+    background-color: rgba(5, 36, 58, 0.61);
+    border-radius: 5px;
+}
+
+.touches{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    margin-top: 50px;
+    gap: 5px;
+}
+
+.bouton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 42px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 25px;
+    border-radius: 5px;
+    color: #CF891F;
+    background-color: rgba(46, 10, 47, 0.75);
+}
+
+.bouton:hover{
+    background-color: #CF891F;
+    color:rgba(46, 10, 47, 0.75);
+    cursor: pointer;
+}
+
+div[data-key = 'AC'] {
+    width: 158px;
+    grid-column: 1/4;
+}
+
+div[data-key = '0'] {
+    width: 101px;
+    grid-column: 1/3;
+}
+
+eval{
+    font-size: 30px;
+    color: white;
+}
